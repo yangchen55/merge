@@ -1,0 +1,23 @@
+def tim_sort(data, run=10):
+for x in range(0, len(data), run):
+data[x:x+run]=insertion_sort(data[x:x+run])
+
+run_idx= run
+while run_idx< len(data):
+for x in range(0, len(data), 2*run_idx):
+data[x:x+2*run_idx]=merge(data[x:x+run_idx], data[x+run_idx:x+2*run_idx])
+run_idx=run_idx*2
+
+
+import random
+random.seed(50)
+ data[]
+ for i in range(100)
+ data.append(random.rangeint(0,100))
+ print(data)
+ result= trim_sort(data)
+ print result
+ 
+
+
+
